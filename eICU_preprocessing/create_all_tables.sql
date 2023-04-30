@@ -30,11 +30,11 @@ create materialized view ld_timeseries_patients as
   select distinct patientunitstayid
     from repeats;
 
-\copy (select * from ld_labels as l where l.patientunitstayid in (select * from ld_timeseries_patients)) to '/Users/emmarocheteau/PycharmProjects/TPC-LoS-prediction/eICU_data/labels.csv' with csv header
-\copy (select * from ld_diagnoses as d where d.patientunitstayid in (select * from ld_timeseries_patients)) to '/Users/emmarocheteau/PycharmProjects/TPC-LoS-prediction/eICU_data/diagnoses.csv' with csv header
-\copy (select * from ld_flat as f where f.patientunitstayid in (select * from ld_timeseries_patients)) to '/Users/emmarocheteau/PycharmProjects/TPC-LoS-prediction/eICU_data/flat_features.csv' with csv header
-\copy (select * from ld_timeserieslab) to '/Users/emmarocheteau/PycharmProjects/TPC-LoS-prediction/eICU_data/timeserieslab.csv' with csv header
-\copy (select * from ld_timeseriesresp) to '/Users/emmarocheteau/PycharmProjects/TPC-LoS-prediction/eICU_data/timeseriesresp.csv' with csv header
-\copy (select * from ld_timeseriesnurse) to '/Users/emmarocheteau/PycharmProjects/TPC-LoS-prediction/eICU_data/timeseriesnurse.csv' with csv header
-\copy (select * from ld_timeseriesperiodic) to '/Users/emmarocheteau/PycharmProjects/TPC-LoS-prediction/eICU_data/timeseriesperiodic.csv' with csv header
-\copy (select * from ld_timeseriesaperiodic) to '/Users/emmarocheteau/PycharmProjects/TPC-LoS-prediction/eICU_data/timeseriesaperiodic.csv' with csv header
+\copy (select * from ld_labels as l where l.patientunitstayid in (select * from ld_timeseries_patients)) to '/content/drive/MyDrive/eICU_data/labels.csv' with csv header
+\copy (select * from ld_diagnoses as d where d.patientunitstayid in (select * from ld_timeseries_patients)) to '/content/drive/MyDrive/eICU_data/diagnoses.csv' with csv header
+\copy (select * from ld_flat as f where f.patientunitstayid in (select * from ld_timeseries_patients)) to '/content/drive/MyDrive/eICU_data/flat_features.csv' with csv header
+\copy (select * from ld_timeserieslab) to '/content/drive/MyDrive/eICU_data/timeserieslab.csv' with csv header
+\copy (select * from ld_timeseriesresp) to '/content/drive/MyDrive/eICU_data/timeseriesresp.csv' with csv header
+\copy (select * from ld_timeseriesnurse) to '/content/drive/MyDrive/eICU_data/timeseriesnurse.csv' with csv header
+\copy (select * from ld_timeseriesperiodic) to '/content/drive/MyDrive/eICU_data/timeseriesperiodic.csv' with csv header
+\copy (select * from ld_timeseriesaperiodic) to '/content/drive/MyDrive/eICU_data/timeseriesaperiodic.csv' with csv header
