@@ -1,4 +1,4 @@
 {
-  "eICU_path": "/Users/emmarocheteau/PycharmProjects/TPC-LoS-prediction/eICU_data/",
+  "eICU_path": "/content/drive/MyDrive/eICU_data",
   "MIMIC_path": "/Users/emmarocheteau/PycharmProjects/TPC-LoS-prediction/MIMIC_data/"
 }
