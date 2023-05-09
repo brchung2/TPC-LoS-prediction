@@ -21,6 +21,8 @@ Need credentialed access to eICU dataset.
 
 **Preprocessing code + command (if applicable):**
 
+Preprocessing code in : eICU_preprocessing/create_all_tables.sql
+Commands: 
 1) Clone this repository
 2) Replace the eICU_path in `paths.json` to a convenient location in your computer, and do the same for `eICU_preprocessing/create_all_tables.sql` using find and replace for 
 `'/content/drive/MyDrive/eICU_data/'`. Leave the extra '/' at the end.
