@@ -95,25 +95,8 @@ Training and Evaluation code for each model in: models folder listed separately 
 
 **Table of results (no need to include additional experiments, but main reproducibility result should be included)**
 
+Performance for each model on 10\% data and the improvement range \% of the TPC model over the best baseline. Bolded metric numbers show the best model is TPC for each metric.
 
-
-### Length of Stay Prediction replication
-
-
-#### eICU
-
-Model | MAD | MAPE | MSE | MSLE | R<sup>2</sup> | 
---- | --- | --- | --- | --- | --- | ---
-Mean* | 3.21 | 395.7 | 29.5 | 2.87 | 0.00 | 0.00
-Median* | 2.76 | 184.4 | 32.6 | 2.15 | -0.11 | 0.00
-LSTM | 2.39±0.00 | 118.2±1.1 | 26.9±0.1 | 1.47±0.01 | 0.09±0.00 | 0.28±0.00
-CW LSTM | 2.37±0.00 | 114.5±0.4 | 26.6±0.1 | 1.43±0.00 | 0.10±0.00 | 0.30±0.00
-Transformer | 2.36±0.00 | 114.1±0.6 | 26.7±0.1 | 1.43±0.00 | 0.09±0.00 | 0.30±0.00
-TPC | 2.309 | 88.1 | 53.465 | 0.955 | 0.133 | 
-
-Our model (TPC) significantly outperforms all baselines by large margins. 
-*The mean and median "models" always predict 3.47 and 1.67 days respectively (the mean and median of the training set).
-
-
+![image](https://user-images.githubusercontent.com/88016352/236999387-c3c8e9fa-5a29-4ccd-958c-3389c8acce33.png)
 
 
