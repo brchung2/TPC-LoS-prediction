@@ -55,17 +55,23 @@ Commands:
     ```
     
 **Training and Evaluation code + command (if applicable)**:
-Training and Evaluation code for each model in: models folder listed separately for each model eg models/run_tpc.py to run the TPC model; models/run_lstm.py to run the LSTM model.
+
+Training and Evaluation code for each model listed separately:
+eg models/run_tpc.py to run the TPC model; models/run_lstm.py to run the LSTM model.
 
 1) Set the working directory to the TPC-LoS-prediction, and run the following command:
 
 Specify command line arguments to hyperparameter values:
     
     ```
-    python3 -m models.run_tpc --dataset eICU --task LoS --model_type tpc --n_layers 4 --kernel_size 3 --no_temp_kernels 10 --point_size 10 --last_linear_size 20 --diagnosis_size 20 --batch_size 64 --learning_rate 0.001 --main_dropout_rate 0.3 --temp_dropout_rate 0.1 
+    
+    python3 -m models.run_tpc --dataset eICU --task LoS --model_type tpc --percentage_data 10  #TPC model
+    python3 -m models.run_LSTM --dataset eICU --task LoS --model_type lstm --percentage_data 10 #LSTM model
+    python3 -m models.run_transformer --dataset eICU --task LoS --model_type transformer --percentage_data 10 #Transformer model  
+    
     ```
- OR run this script to run experiments: models/hyperparameter_scripts/eICU/hyperparameter_tuning_exp.py
- by running this command:
+ 2) Run this script to run experiments: 
+
      ```
     python3 -m models.hyperparameter_scripts.eICU.hyperparameter_tuning_exp 
     ```
