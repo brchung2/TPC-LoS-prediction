@@ -71,6 +71,9 @@ Specify command line arguments to hyperparameter values:
 
 **Table of results (no need to include additional experiments, but main reproducibility result should be included)**
 
+Presentation slides:
+https://docs.google.com/presentation/d/1-GQfAKFpgfdcnkTdKmeyAoaGeWNCnBUxEgQbWf3nc6I/edit#slide=id.g222d1ba3356_0_134
+
 Performance for each model on 10\% data and the improvement range \% of the TPC model over the best baseline. Bolded metric numbers show the best model is TPC for each metric.
 
 ![image](https://user-images.githubusercontent.com/88016352/236999387-c3c8e9fa-5a29-4ccd-958c-3389c8acce33.png)
