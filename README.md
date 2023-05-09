@@ -1,8 +1,8 @@
 
 Repository for DLH Replication Project: 
 ===============================
-**
-Citation to the original paper:**
+
+**Citation to the original paper:**
 Rocheteau, E., Lio`, P. & Hyland, S. Temporal point- wise convolutional networks for length of stay pre- diction in the intensive care unit. In Proceedings of the Conference on Health, Inference, and Learning, 58–68 (2021). https://arxiv.org/abs/2007.09483
 
 **Link to the original paper’s repo (if applicable):**
