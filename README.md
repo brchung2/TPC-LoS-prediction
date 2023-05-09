@@ -97,42 +97,23 @@ Training and Evaluation code for each model in: models folder listed separately 
 
 
 
-### Length of Stay Prediction
+### Length of Stay Prediction replication
 
-We report on the following metrics: 
-- Mean absolute deviation (MAD)
-- Mean absolute percentage error (MAPE)
-- Mean squared error (MSE)
-- Mean squared log error (MSLE)
-- Coefficient of determination (R<sup>2</sup>)
-- Cohen Kappa Score (Harutyunyan et al. 2019)
-
-For the first four metrics, lower is better. For the last two, higher is better.
 
 #### eICU
 
-Model | MAD | MAPE | MSE | MSLE | R<sup>2</sup> | Kappa
+Model | MAD | MAPE | MSE | MSLE | R<sup>2</sup> | 
 --- | --- | --- | --- | --- | --- | ---
 Mean* | 3.21 | 395.7 | 29.5 | 2.87 | 0.00 | 0.00
 Median* | 2.76 | 184.4 | 32.6 | 2.15 | -0.11 | 0.00
 LSTM | 2.39±0.00 | 118.2±1.1 | 26.9±0.1 | 1.47±0.01 | 0.09±0.00 | 0.28±0.00
 CW LSTM | 2.37±0.00 | 114.5±0.4 | 26.6±0.1 | 1.43±0.00 | 0.10±0.00 | 0.30±0.00
 Transformer | 2.36±0.00 | 114.1±0.6 | 26.7±0.1 | 1.43±0.00 | 0.09±0.00 | 0.30±0.00
-TPC | 1.78±0.02 | 63.5±4.3 | 21.7±0.5 | 0.70±0.03 | 0.27±0.02 | 0.58±0.01
+TPC | 2.309 | 88.1 | 53.465 | 0.955 | 0.133 | 
 
 Our model (TPC) significantly outperforms all baselines by large margins. 
 *The mean and median "models" always predict 3.47 and 1.67 days respectively (the mean and median of the training set).
 
-
-
-#### eICU
-
-Model | AUROC | AUPRC | MAD | MAPE | MSE | MSLE | R<sup>2</sup> | Kappa
---- | --- | --- | --- | --- | --- | --- | --- | ---
-LSTM | 0.852±0.003 | 0.436±0.007 | 2.40±0.01 | 116.5±0.8 | 27.2±0.2 | 1.47±0.01 | 0.08±0.01 | 0.28±0.01
-CW LSTM | 0.865±0.002 | 0.490±0.007 | 2.37±0.00 | 115.0±0.7 | 26.8±0.1 | 1.44±0.00 | 0.09±0.00 | 0.30±0.00
-Transformer | 0.858±0.001 | 0.475±0.004 | 2.36±0.00 | 114.2±0.7 | 26.6±0.1 | 1.43±0.00 | 0.10±0.00 | 0.30±0.00
-TPC | 0.865±0.002 | 0.523±0.006 | 1.55±0.01 | 46.4±2.6 | 18.7±0.2 | 0.40±0.02 | 0.37±0.01 | 0.70±0.00
 
 
 
