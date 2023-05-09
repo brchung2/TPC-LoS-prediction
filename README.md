@@ -60,7 +60,7 @@ Training and Evaluation code for each model in: models folder listed separately 
     python3 -m models.run_tpc
     ```
     
-    Note that your experiment can be customised by using command line arguments e.g.
+    Experiment can be customised by using command line arguments e.g.
     
     ```
     python3 -m models.run_tpc --dataset eICU --task LoS --model_type tpc --n_layers 4 --kernel_size 3 --no_temp_kernels 10 --point_size 10 --last_linear_size 20 --diagnosis_size 20 --batch_size 64 --learning_rate 0.001 --main_dropout_rate 0.3 --temp_dropout_rate 0.1 
@@ -89,9 +89,9 @@ Training and Evaluation code for each model in: models folder listed separately 
     ```
     
 
-Pretrained model (if applicable)
-Table of results (no need to include additional experiments, but main reproducibility result should be included)
+**Pretrained model (if applicable):**
 
+**Table of results (no need to include additional experiments, but main reproducibility result should be included)**
 
 
 
